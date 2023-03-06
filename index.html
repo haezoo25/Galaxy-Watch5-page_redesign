@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy-Watch5-page_redesign</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="head_all container">
+
+            <hgroup>
+                <h1><a href="./index.html"><img src="media/Logo.svg" alt="logo"></a></h1>
+            </hgroup>
+
+            <nav class="pc_menu">
+                <ul>
+                    <div class="menu_p">
+                        <li><a href="" class="scroll"> Products </a></li>
+                        <li><a href="" class="scroll"> About </a></li>
+                        <li><a href="" class="scroll"> Overview </a></li>
+                    </div>
+
+                    <div class="menu_icon">
+                        <a href=""><img src="media/user_icon.svg"></a>
+                        <a href=""><img src="media/shopping cart_icon.svg"></a>
+                    </div>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- 모바일 -->
+        <nav class="m_menu">
+
+            <ul>
+                <li><a href="" class="scroll"> Main </a></li>
+                <li><a href="" class="scroll"> Main </a></li>
+                <li><a href="" class="scroll"> Main </a></li>
+            </ul>
+    
+        </nav>
+
+          <div class="m_menu_button" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    
+          <!--반응형 js-->
+          <script type="text/javascript">
+            $(function () {
+              $(".m_menu_button").click(function () {
+                $(".m_menu").animate({ height: "toggle" }, 250);
+              });
+            });
+          </script>
+    
+          <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+            }
+          </script>
+
+    </header>
+
+    <main>
+        <section id="products">
+            <div class="products_wrap container">
+
+                <div class="products_txt">
+                    <h1>Galaxy</h1>
+
+                    <div class="prd_txt">
+                        <h3>Watch 5</h3>
+                        <h3>│</h3>
+                        <h3>Watch 5 Pro</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 반응형 메뉴 -->
+    
+
+    <!-- script -->
+    <script src="index.js"></script>
+</body>
+</html>
