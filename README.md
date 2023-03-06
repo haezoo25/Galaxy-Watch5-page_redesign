@@ -1,1 +1,1 @@
-# Galaxy-Watch5-page_redesign
+# Galaxy Watch5 page_redesign
