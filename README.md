@@ -1,5 +1,5 @@
 # Galaxy Watch5 page_redesign
-https://haezoo25.github.io/Galaxy-Watch5-page_redesign/
+<a href="https://haezoo25.github.io/Galaxy-Watch5-page_redesign/">➥ Go to page</a>
 --------------------------------------
 <br>
 :art: Design <br><br>
