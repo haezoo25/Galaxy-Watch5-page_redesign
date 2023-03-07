@@ -1,12 +1,12 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 html,body {
-    overflow:hidden;
     font-family:'Spoqa Han Sans Neo', 'sans-serif';
     -webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
     background-color: #F2F1F0;
 }
+
 
 * {
     margin: 0;
@@ -24,12 +24,12 @@ ul, li{ margin:0; padding:0; list-style:none; }
     position: fixed;
     width: 100%;
     height: 60px;
+    background: rgba(242, 241, 240, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 900;
     padding: 0 7%;
-    border-bottom: 1px solid #222;
     backdrop-filter: blur(2px);
   }
   
@@ -234,32 +234,40 @@ ul, li{ margin:0; padding:0; list-style:none; }
 }
 
 /* products */
-
 #products {
     width: 100%;
     height: 100vh;
-    padding: 100px 0;
     position: relative;
-    overflow: hidden;
 }
-/* 이미지 보이게 하기 */
 #products::before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 50%;
+    width: 67%;
+    height: 67%;
     bottom: 0;
-    left: 0;
-    background: url(../media/Main_img.png) no-repeat center bottom;
+    right: 0;
+    background: url(../media/Main_item.png) no-repeat right bottom;
     background-size: cover;
-    z-index: -1;
+    filter: blur(1px);
+    opacity: 0.6;
+}
+#products::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  bottom: -4%;
+  left: 0;
+  background: url(../media/Main_img.png) no-repeat center bottom;
+  background-size: cover;
 }
 .products_wrap {
     width: 100%;
+    padding: 100px 0;
     position: relative;
 }
 .products_txt {
-    padding: 3% 0 0 10%;
+    padding: 2% 0 0 10%;
     z-index: 10;
 }
 .products_txt h1 {
@@ -271,8 +279,183 @@ ul, li{ margin:0; padding:0; list-style:none; }
     display: flex;
 }
 .products_txt .prd_txt h3 {
-    margin: 1% 0 0 1%;
+    margin: 0.3% 0 0 0.3%;
     font-size: 2.5rem;
     font-weight: 600;
-    color: #494949;
+    color: #5e5e5e;
+}
+
+.products_txt .prd_txt h3.prd_1, .products_txt .prd_txt h3.prd_2 {
+  transition: all 0.3s ease-in-out;
+}
+.products_txt .prd_txt h3.prd_1:hover, .products_txt .prd_txt h3.prd_2:hover {
+  color: #9582ff;
+  text-shadow: 0px 1px 5px rgba(112, 81, 161, 0.35);
+}
+
+/* About */
+#about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(107.56deg, #292828 0%, #161617 100%);
+}
+#about::before {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  bottom: 0;
+  right: 0;
+  background: url(../media/sub1_img.png) no-repeat right bottom;
+  background-size: cover;
+}
+.about_wrap {
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+}
+.about_info {
+  width: 100%;
+  margin-top: 7%;
+  padding: 0 0 0 11%;
+  color: #fff;
+}
+.about_info .about_title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.about_info .about_title h2 {
+  font-weight: 100;
+  font-size: 5.5rem;
+  margin-right: 1%;
+}
+.about_info .about_title h1 {
+  font-weight: bold;
+  font-size: 6rem;
+}
+.about_info h5 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1.5%;
+}
+.about_info p {
+  font-weight: 100;
+  margin-bottom: 1.3%;
+  line-height: 165%;
+}
+.about_info button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 0.7% 3%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.about_info button:hover {
+  background: #9582ff;
+}
+
+/* Overview */
+#overview {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.overview_wrap {
+  width: 100%;
+  padding: 9% 0 10% 0;
+}
+.overview_img img {
+  max-width: 100%;
+}
+.overview_txt {
+  margin-top: 2%;
+}
+.overview_txt h5 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 0.2%;
+}
+.overview_txt h2 {
+  color: #665BA3;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.4%;
+}
+.overview_txt p {
+  font-weight: 300;
+  margin-bottom: 1.3%;
+  line-height: 165%;
+}
+.overview_wrap button {
+  background: #232223;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 0.7% 3%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.overview_wrap button:hover {
+  background: #9582ff;
+}
+
+
+/* sub_end */
+#sub_end {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+.end_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.end_wrap img {
+  max-width: 40%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* footer */
+footer {
+  background-color: #292828;
+    width: 100%;
+    padding: 60px 5%;
+    color: #aaaaaa;
+}
+footer p {
+  font-weight: 100;
+  font-size: 0.8rem;
+  line-height: 165%;
+}
+.footer_icon{
+  width: 100%;
+  margin-bottom: 1.3%;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer_icon img {
+  margin-right: 1%;
+  cursor: pointer;
+}
+.footer_info {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1%;
+}
+.footer_info p.hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer_info p.hover:hover {
+  color: #c9c9c9;
 }
