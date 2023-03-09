@@ -1,9 +1,9 @@
 # Galaxy Watch5 page_redesign
+<a href="https://haezoo25.github.io/Galaxy-Watch5-page_redesign/">➥ Go to page</a>
 --------------------------------------
 <br>
 :art: Design <br><br>
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white">
-<img src="https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=Adobe Photoshop&logoColor=white">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"> <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=Adobe Photoshop&logoColor=white">
 
 :green_heart: Used <br><br>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
