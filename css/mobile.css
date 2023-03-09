@@ -1,20 +1,409 @@
 /*데탑*/
-@media screen and (max-width:1440px) {}
+@media screen and (max-width:1440px) {
+    /* products */
+    .products_txt h1 {font-size: 6rem;}
+
+    /* about */
+    .about_info {
+        padding: 0 0 0 9%;
+        margin-top: 10%;
+    }
+    .about_info .about_title h2 {
+        font-size: 4rem;
+    }
+    .about_info .about_title h1 {
+        font-size: 4.5rem;
+    }
+    #about::before {
+        width: 95%;
+        height: 95%;
+    }
+
+    /* overview */
+    .overview_wrap {
+        padding: 10% 0;
+    }
+    .overview_img img {
+        max-width: 45%;
+    }
+    .overview_txt h2 {
+        font-size: 2.4rem;
+    }
+    
+}
 
 /*노트북*/
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+    .pc_menu .menu_p {
+        width: 40%;
+    }
+
+    /* products */
+    #products {
+        height: 90vh;
+    }
+    #products::before {
+        width: 85%;
+        height: 60%;
+    }
+    .products_wrap {
+        width: 100%;
+        padding: 100px 0 0 0;
+        position: relative;
+    }
+    #products::after {
+        height: 65%;
+        bottom: -2%;
+    }
+
+    /* about */
+    .about_info p {
+        margin-bottom: 2%;
+    }
+    #about::before {
+        width: 105%;
+        height: 100%;
+    }
+    .about_info {
+        margin-top: 12%;
+    }
+    .about_info button {
+        padding: 1.2% 4%;
+    }
+
+    /* overview */
+    .overview_wrap {
+        padding: 20% 0 10% 0;
+        margin-top: 3%;
+    }
+    .overview_img img {
+        max-width: 50%;
+    }
+    .overview_txt {
+        margin-top: 3%;
+    }
+    .overview_txt h5 {
+        margin-bottom: 0;
+    }
+    .overview_txt h2 {
+        font-size: 2.1rem;
+    }
+    .overview_txt p {
+        margin-bottom: 2%;
+    }
+    .overview_wrap button {
+        padding: 1.2% 4%;
+    }
+
+    /* suv_end */
+    #sub_end {
+        height: 60vh;
+        margin-top: 0;
+    }
+    
+}
 
 /*아이패드 (768px)*/
-@media screen and (max-width:991px) {}
+@media screen and (max-width:991px) {
+    .pc_menu .menu_p {
+        width: 50%;
+    }
+}
 
 /*모바일*/
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+
+    /* 반응형 헤더 적용하기 */
+
+    /* products */
+    .products_txt h1 {
+        font-size: 5.4rem;
+    }
+    .products_txt .prd_txt h3 {
+        font-size: 2.3rem;
+    }
+
+    /* about */
+    .about_info .about_title h2 {
+        font-size: 3.7rem;
+        margin-right: 2%;
+    }
+    .about_info .about_title h1 {
+        font-size: 4rem;
+    }
+    .about_info h5 {
+        font-size: 1.9rem;
+    }
+    .about_info p {
+        font-size: 0.9rem;
+        margin-bottom: 2.5%;
+    }
+    .about_info button {
+        padding: 1.5% 4%;
+    }
+    #about::before {
+        width: 122%;
+        height: 100%;
+    }
+
+    /* overview */
+    .overview_wrap {
+        margin-top: 10%;
+    }
+    .overview_img img {
+        max-width: 55%;
+    }
+
+    /* sub_end */
+    #sub_end {
+        height: 50vh;
+    }
+    .end_wrap img {
+        max-width: 45%;
+    }
+
+    /* footer */
+    .footer_icon img {
+        margin-right: 3%;
+    }
+    .footer_icon img img {
+        max-width: 80%;
+    }
+}
 
 /*모바일2*/
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    .head_all {
+        background: rgba(242, 241, 240, 0.2);
+    }
+    hgroup {
+        width: 100%;
+    }
+    hgroup h1 {
+        width: 100%;
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+    hgroup h1 img {
+        max-width: 27%;
+    }
+    .pc_menu {
+        display: none;
+    }
+
+
+    /* hgroup {
+        width: 55%;
+    } */
+
+    /* products */
+    #products {
+        height: 100vh;
+    }
+    .products_wrap {
+        padding: 130px 0 0 0;
+    }
+    #products::after {
+        height: 35%;
+        bottom: 0%;
+    }
+    .products_txt .prd_txt {
+        margin-left: 2%;
+    }
+    .products_txt h1 {
+        font-size: 5rem;
+        margin-bottom: 1%;
+    }
+    .products_txt .prd_txt h3 {
+        font-size: 2rem;
+    }
+    #products::before {
+        left: 0;
+        top: 13%;
+        width: 100%;
+    }
+    #products::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: -1%;
+        left: 0;
+        background: url(../media/Main_m.png) no-repeat center bottom;
+        background-size: contain;
+    }
+
+    /* about */
+    #about::before {
+        width: 145%;
+        right: -5%;
+    }
+    .about_info p {
+        margin-bottom: 3.5%;
+    }
+
+    /* overview */
+    .overview_img img {
+        max-width: 70%;
+    }
+    .overview_txt p {
+        margin-bottom: 4%;
+    }
+    .overview_wrap button {
+        padding: 2.2% 7%;
+    }
+
+    /* sub_end */
+    .end_wrap img {
+        max-width: 70%;
+    }
+}
 
 /*모바일3 갤럭시*/
-@media screen and (max-width:425px) {}
+@media screen and (max-width:425px) {
+    hgroup h1 img {
+        max-width: 35%;
+    }
+    /* hgroup h1 {
+        width: 75%;
+    } */
+
+    /* products */
+    .products_txt h1 {
+        font-size: 4rem;
+    }
+    .products_txt .prd_txt {
+        margin-left: 0;
+    }
+    .products_txt .prd_txt h3 {
+        font-size: 1.8rem;
+    }
+
+    /* about */
+    #about::before {
+        width: 176%;
+    }
+    .about_info {
+        padding: 0 10%;
+    }
+    .about_info .about_title h2 {
+        font-size: 2.7rem;
+    }
+    .about_info .about_title h1 {
+        font-size: 3rem;
+    }
+    .about_info button {
+        padding: 2.3% 7%;
+    }
+
+    /* overview */
+    .overview_wrap {
+        margin-top: 28%;
+    }
+    .overview_txt h5 {
+        font-size: 1.5rem;
+    }
+    .overview_txt h2 {
+        font-size: 2rem;
+    }
+    .overview_txt p {
+        margin-bottom: 5%;
+        font-size: 0.9rem;
+    }
+    
+    /* sub_end */
+    #sub_end {
+        height: 40vh;
+    }
+
+    /* footer */
+    .footer_icon {
+        margin-bottom: 4%;
+    }
+}
 
 /*모바일4 아이폰*/
-@media screen and (max-width:375px) {}
+@media screen and (max-width:375px) {
+
+    /* products */
+    .products_wrap {
+        text-align: center;
+    }
+    .products_txt {
+        padding: 0;
+    }
+    .products_txt .prd_txt {
+        justify-content: center;
+    }
+    .products_txt .prd_txt h3 {
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+    #products::before {
+        left: 30%;
+        top: 30%;
+        width: 100%;
+        transform: rotate( 90deg );
+    }
+    #products::after {
+        content: '';
+        position: absolute;
+        width: 165%;
+        height: 50%;
+        bottom: -1%;
+        left: 0;
+        background: url(../media/Main_m.png) no-repeat center bottom;
+        background-size: contain;
+    }
+
+    /* about */
+    .about_info .about_title h2 {
+        font-size: 2rem;
+    }
+    .about_info .about_title h1 {
+        font-size: 2rem;
+    }
+    .about_info p {
+        margin-bottom: 5.5%;
+    }
+    .about_info button {
+        padding: 3.3% 10%;
+    }
+    #about::before {
+        width: 210%;
+        right: -25%;
+    }
+
+    /* overview */
+    .overview_wrap {
+        margin-top: 50%;
+    }
+    .overview_img img {
+        max-width: 80%;
+    }
+    .overview_txt h5 {
+        font-size: 1.3rem;
+    }
+    .overview_txt h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2.5%;
+    }
+    .overview_txt p {
+        margin-bottom: 6%;
+        font-size: 0.8rem;
+    }
+    .overview_wrap button {
+        padding: 3.2% 7%;
+    }
+
+    /* sub_end */
+    #sub_end {
+        height: 30vh;
+    }
+
+    /* footer */
+    footer p {
+        font-size: 0.7rem;
+    }
+}
