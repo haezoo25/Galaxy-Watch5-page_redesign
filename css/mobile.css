@@ -253,6 +253,9 @@
     .overview_wrap button {
         padding: 2.2% 7%;
     }
+    .about_info button {
+        padding: 2.3% 5%;
+    }
 
     /* sub_end */
     .end_wrap img {
@@ -294,7 +297,7 @@
         font-size: 3rem;
     }
     .about_info button {
-        padding: 2.3% 7%;
+        padding: 3% 7%;
     }
 
     /* overview */
@@ -368,7 +371,7 @@
         margin-bottom: 5.5%;
     }
     .about_info button {
-        padding: 3.3% 10%;
+        padding: 4% 10%;
     }
     #about::before {
         width: 210%;

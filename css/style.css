@@ -5,18 +5,23 @@ html,body {
 	  -moz-user-select: none;
 	  -ms-user-select: none;
     background-color: #F2F1F0;
+    -ms-overflow-style: none;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   a { text-decoration: none; }
 
 ul, li{ margin:0; padding:0; list-style:none; }
+
 
 
 /* header */
@@ -82,156 +87,6 @@ ul, li{ margin:0; padding:0; list-style:none; }
     max-width: 65%;
   }
   
-  /* 햄버거메뉴 */
-.m_menu_button {
-  cursor: pointer;
-  z-index: 999;
-  display: none;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 3px;
-  background-color: #1a1a1a;
-  margin: 10px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 9px);
-  background-color: #000
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-9px, -7px);
-  transform: rotate(45deg) translate(-9px, -9px);
-  background-color: #000;
-  z-index: 9999 !important;
-}
-
-.m_menu_button i {
-  color: #fff;
-}
-
-.m_menu {
-  display: none;
-  position: fixed;
-  right: -300px;
-  top: 0;
-  width: 50%;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, .5);
-  text-align: center;
-  padding: 10% 6%;
-  z-index: 900;
-}
-
-.m_menu ul {
-  width: 100%;
-  text-align: left;
-}
-
-.m_menu ul li {
-  margin-bottom: 20%;
-}
-
-.m_menu ul li:last-child {
-  margin-bottom: 0 !important;
-}
-
-.m_menu ul li a {
-  font-size: 1.6em;
-  text-decoration: none;
-  color: #222;
-  transition: all 0.3s ease-in-out;
-  font-weight: 500;
-}
-
-.m_menu ul li a:hover {
-  color: #FF002B;
-}
-
-.m_menu_down {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 990;
-  background-color: #b8a1f8;
-  padding: 7%;
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, .5);
-}
-
-.m_menu_down_wrap {
-  width: 100%;
-}
-
-.m_menu_down_wrap ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.m_menu_down_wrap ul li i {
-  transition: all .3s;
-}
-
-.m_menu_down_wrap ul li a:hover>i {
-  color: #fff;
-}
-
-.m_menu ul li a.mafia,
-.m_menu ul li a.mafia_en {
-  position: relative;
-}
-
-.m_menu ul li a.mafia::after {
-  content: '준비중입니다.';
-  position: absolute;
-  display: none;
-  width: 100%;
-  height: 100%;
-  font-size: .5rem;
-  color: #FF002b;
-  top: 5px;
-  left: 105%;
-  transition: .3s;
-}
-
-.m_menu ul li a.mafia_en::before {
-  content: 'Service is being prepared.';
-  position: absolute;
-  display: none;
-  width: 130%;
-  height: 100%;
-  font-size: .5rem;
-  color: #FF002b;
-  top: 5px;
-  left: 105%;
-  transition: .3s;
-}
-
-.m_menu ul li a.mafia:hover::after {
-  display: block;
-}
-
-.m_menu ul li a.mafia_en:hover::before {
-  display: block;
-}
-
-
-
-.m_menu ul li.lang a {
-  margin-right: 5%;
-}
 
 /* products */
 #products {
@@ -388,6 +243,10 @@ ul, li{ margin:0; padding:0; list-style:none; }
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5%;
+  transition: all 0.3s ease-in-out;
+}
+.overview_txt h2:hover {
+  color: #ff7da4;
 }
 .overview_txt p {
   color: #222222;
